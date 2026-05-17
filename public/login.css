@@ -1,0 +1,126 @@
+/* Core Glassmorphism Backbone */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('USTP-CDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.4); 
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+/* Nav Bar matching Home index.css */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: #fff; }
+
+/* Center the Auth Box */
+.auth-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.auth-box h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+.auth-form label {
+    display: block;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: #fff;
+    box-sizing: border-box; /* Crucial for width alignment */
+}
+
+/* Matching Home btn-primary */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: #fff;
+    color: #0f172a;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
+
+/* Errors */
+.alert-danger, .error-box {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+    padding: 30px;
+    text-align: center;
+    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}

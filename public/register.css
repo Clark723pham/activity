@@ -1,0 +1,162 @@
+/* Core Glassmorphism Backbone - Match with Homepage */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('USTP-CDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.4); /* Atmospheric dark home tint */
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    color: #fff;
+}
+
+/* Main Auth Section layout centering */
+.auth-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* The Glass Panel Content Box */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.glass-panel h2 {
+    margin: 0 0 8px 0;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0 0 30px 0;
+}
+
+/* Input layout handling */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Primary Form Button - Matches home.css hero actions */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: #fff;
+    color: #0f172a;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Errors box variant formatting */
+.error-box {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Footer layout anchoring */
+.footer {
+    padding: 30px;
+    text-align: center;
+    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+}
